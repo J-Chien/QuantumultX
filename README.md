@@ -1,5 +1,5 @@
 # QuantumultX
-搬自神机规则，定制策略组
+搬自[神机规则](https://github.com/ConnersHua/Profiles/tree/master) ，自定制策略组
 
 Apple策略组，接管Apple流量
 
