@@ -3,13 +3,17 @@
  */
 
 /*
-[rewrite_local]
-^https?://mp.weixin.qq.com/mp/getappmsgad url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
+[Script]
+http-request ^https://mp\.weixin\.qq\.com/mp/getappmsgad script-path=https://Choler.github.io/Surge/Script/WeChat.js
 
-hostname = mp.weixin.qq.com,
+[MITM]
+hostname = mp.weixin.qq.com
 */
 
-var obj = JSON.parse($response.body);
-obj.advertisement_num = 0;
-obj.advertisement_info = [];
-$done({body: JSON.stringify(obj)}); 
+var data = {
+  body: "{}",
+  headers: {
+    "Content-Type": "application/json"
+  }
+};
+$done({response: data});
