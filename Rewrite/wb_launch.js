@@ -1,5 +1,5 @@
 /**
- * @supported 57CA9AC5 F585B442
+ * @supported 57CA9AC56FD2 F585B442F879
  */
 
 const path1 = "/interface/sdk/sdkad.php";
